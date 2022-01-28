@@ -26,7 +26,6 @@
   margin-top: 2em;
   position: relative;
   font-family: "Dosis", sans-serif;
-
   margin: 0;
 }
 
@@ -42,7 +41,6 @@
 
 .about-me {
   display: inline-block;
-  /* margin-top: 1px; */
   margin-left: 120px;
   text-align: center;
 }
