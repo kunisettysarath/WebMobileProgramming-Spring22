@@ -4,4 +4,4 @@ Repository for Web/Mobile Programming course
   skkh2@umkc.edu
 # Dharma Teja Konidena
   dkbmy@umsystem.edu 
-  https://github.com/Dharmateja183/Web-and-Mobile-programming-spring-2022/tree/main/
+  GitHub Link: https://github.com/Dharmateja183/Web-and-Mobile-programming-spring-2022/tree/main/
