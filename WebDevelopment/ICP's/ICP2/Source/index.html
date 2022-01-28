@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICP2</title>
+
+    <!-- linking the extrernal style sheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- linking an image generated in favicon website, which is used to display before the title of the webpage-->
+    <link rel="icon" href="./images/favicon.ico" />
+
+    <!-- linking google fonts api inorder to use in the website -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Waterfall&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- this is main div, all the elements are enclosed in this div-->
+    <div class="main">
+      <!-- navbar consisting header elements -->
+      <nav class="home-header">
+        <ul class="navbar">
+          <li class="header-list">
+            <a href="#" class="header-options">Home</a>
+          </li>
+          <li class="header-list">
+            <a href="#" class="header-options">About</a>
+          </li>
+          <li class="header-list">
+            <a href="#" class="header-options">Projects</a>
+          </li>
+          <li class="header-list">
+            <a href="#" class="header-options">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- this div section has the elements that displays personal details -->
+      <div class="about-me">
+        <!-- accessing the image stright from internet -->
+        <a
+          href="https://cdn-icons-png.flaticon.com/512/3819/3819263.png"
+          target="_blank"
+        >
+          <img
+            class="profile"
+            src="https://cdn-icons-png.flaticon.com/512/3819/3819263.png"
+            alt="profile-picture"
+        /></a>
+        <h1 class="intro">
+          I am <span class="special-style-name">Sarath Chandra</span>
+        </h1>
+        <p class="status">
+          <span class="special-style-name"> <b>Grad student</b></span> at
+          University Of Missouri, Kansas City
+        </p>
+        <!-- accessing the image from "Images" folder in the project -->
+        <a href="./images/UMKC.png" target="_blank">
+          <img
+            class="university-logo"
+            src="./images/UMKC.png"
+            alt="University logo"
+        /></a>
+      </div>
+      <!-- this div encloses the video element -->
+      <div class="video">
+        <iframe
+          height="380"
+          width="600"
+          src="https://www.youtube.com/embed/0NB0i1dvP40?autoplay=1&control=1&mute=1"
+        >
+        </iframe>
+      </div>
+      <!-- this div consists the footer elements  -->
+      <div>
+        <hr />
+        <ol class="footer">
+          <li>
+            <a class="footer-link" href="#">LinkedIn</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Twitter</a>
+          </li>
+          <li><a class="footer-link" href="#">Youtube</a></li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

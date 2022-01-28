@@ -1,0 +1,94 @@
+.header-list {
+  display: inline-block;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.navbar {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.header-options {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 1000;
+  font-size: 1.5em;
+  color: rgba(2, 0, 0, 0.897);
+}
+
+.header-options:hover,
+.footer-link:hover {
+  color: rgba(180, 31, 25, 0.993);
+}
+
+.main {
+  margin-top: 2em;
+  position: relative;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+}
+
+.special-style-name {
+  color: rgba(113, 218, 14, 0.932);
+  font-style: italic;
+}
+
+.intro,
+.status {
+  margin: 10px;
+}
+
+.about-me {
+  display: inline-block;
+  margin-left: 120px;
+  text-align: center;
+}
+
+.profile {
+  background-color: #b5deff;
+  border-radius: 50%;
+  margin-top: 10px;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.7s ease-in-out;
+}
+
+.university-logo {
+  width: 90%;
+  transition: transform 0.7s ease-in-out;
+}
+
+.university-logo:hover,
+.profile:hover {
+  transform: rotateY(180deg);
+}
+
+.video {
+  float: right;
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 120px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer > li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.footer-link {
+  color: #460227;
+  font-size: 22px;
+  align-content: center;
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 40px;
+}
