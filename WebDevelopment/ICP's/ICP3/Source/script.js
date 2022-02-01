@@ -6,6 +6,8 @@ for (var v = 0; v < 3; v++) {
     .querySelectorAll(".game-inputs")
     [v].addEventListener("click", function (event) {
       findWinner(this.getAttribute("id"));
+      document.querySelector(".game-start-info").innerHTML =
+        "You are now playing against computer";
     });
 }
 

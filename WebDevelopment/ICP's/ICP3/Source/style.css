@@ -7,7 +7,13 @@ body {
   margin-top: 1.5em;
 }
 
+.game-blocks {
+  display: inline-block;
+  height: 380px;
+}
+
 h1 {
+  font-size: 3em;
 }
 
 h3 {
@@ -45,7 +51,11 @@ h4 {
 }
 
 .game-inputs {
-  width: 200px;
+  width: 180px;
+}
+
+.game-inputs:hover {
+  width: 190px;
 }
 
 .score-board {
@@ -53,7 +63,7 @@ h4 {
   text-align: center;
   width: 40%;
   /* margin-top: 5em; */
-  /* margin-right: 8em; */
+  margin-right: 6em;
 }
 
 #rock {
