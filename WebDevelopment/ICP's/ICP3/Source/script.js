@@ -1,6 +1,8 @@
+// variables to store win streak
 var userWins = 0;
 var computerWins = 0;
 
+// adding the eventlisteners for the signs
 for (var v = 0; v < 3; v++) {
   document
     .querySelectorAll(".game-inputs")
@@ -11,6 +13,7 @@ for (var v = 0; v < 3; v++) {
     });
 }
 
+// this method will find the winner and will display the user streaks
 function findWinner(userInput) {
   var computerInput = getcomputerInput();
   console.log("user input " + userInput);
@@ -38,6 +41,7 @@ function findWinner(userInput) {
   }
 }
 
+// random number generator for computer choice
 function getcomputerInput() {
   const num = Math.floor(Math.random() * 3) + 1;
   if (num === 1) return "rock";

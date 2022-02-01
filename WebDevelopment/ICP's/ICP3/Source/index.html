@@ -35,7 +35,9 @@
   <body>
     <h1 class="game-info">ROCK PAPER SCISSOR</h1>
     <p class="game-start-info">Choose your sign to start</p>
+    <!-- this block consists for user interaction elements -->
     <section class="main">
+      <!-- sign images for user selection -->
       <div class="row game-interaction">
         <div class="col game-blocks">
           <input
@@ -57,11 +59,13 @@
             src="./Images/paper.JPG"
           />
         </div>
+        <!-- user and computer options displayed which are selected -->
         <div class="col input-feed">
           <h3 class="user-input">You: NA</h3>
           <h3 class="computer-input">Computer: NA</h3>
         </div>
       </div>
+      <!-- score board section -->
       <div class="row score-board">
         <h2 class="score-heading">Score</h2>
         <div class="col info">
@@ -72,6 +76,7 @@
         <h2 class="score-status">0 : 0</h2>
       </div>
     </section>
+    <!-- linking java script file -->
     <script src="script.js" charset="UTF-8"></script>
   </body>
 </html>
