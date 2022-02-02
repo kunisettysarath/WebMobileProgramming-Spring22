@@ -1,0 +1,71 @@
+/* styling of the elements starts */
+body {
+  text-align: center;
+  margin-top: 1.5em;
+}
+.game-interaction,
+.score-board {
+  margin-top: 1.5em;
+}
+
+.game-blocks {
+  display: inline-block;
+  height: 380px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  display: inline-block;
+  margin: 2em 1em;
+  width: 10em;
+}
+
+h4 {
+  display: inline-block;
+  margin: 10px;
+}
+.info {
+  margin-left: 20px;
+}
+.score-status,
+.score-heading {
+  font-size: 6em;
+}
+
+.main {
+  text-align: center;
+}
+
+.game-interaction,
+.score-board {
+  display: inline-block;
+}
+
+.game-inputs {
+  width: 180px;
+}
+
+.game-inputs:hover {
+  width: 190px;
+}
+
+.score-board {
+  float: right;
+  text-align: center;
+  width: 40%;
+  margin-right: 6em;
+}
+
+#rock {
+  display: block;
+  text-align: center;
+  margin-left: 15em;
+}
+
+.input-feed {
+  margin: 0em 0;
+}
+/* styling of the elements ends */
