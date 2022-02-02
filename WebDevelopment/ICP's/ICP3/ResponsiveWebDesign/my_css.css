@@ -8,14 +8,11 @@
 }
 body {
     font-family: 'Georgia', serif;
-    background: linear-gradient(to bottom, #2e231f, #3ce3e8);
 }
 .profile {
     height: 110px;
     margin-top: 2px;
     border-bottom : 0px;
-
-    color: rgb(224, 193, 43);
 }
 .profile-pic {
     height: 110px;
@@ -62,4 +59,10 @@ body {
 }
 .set {
     margin-bottom: 20px;
+}
+
+hr {
+    height:3px;
+    border-width:0;
+    background-color: grey;
 }
