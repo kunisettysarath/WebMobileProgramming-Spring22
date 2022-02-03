@@ -1,30 +1,41 @@
-@media screen and (min-width: 480px)  {body {
+body {
     font-family: 'Georgia', serif;
-    background: linear-gradient(to bottom, #ffffff, #3ce3e8);}
-{
-    box-sizing: border-box;
-}
- {
-    margin: 0;
-    padding: 0;
-}
-
-
+    margin-top: 2em;
 }
 .profile {
-    height: 110px;
-    margin-top: 2px;
-    border-bottom : 0px;
-
-    color: rgb(224, 193, 43);
+    color: #bcbcbc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    /* width: 100%; */
 }
-.profile-pic {
-    height: 110px;
+
+hr {
+    margin: 0.1em auto; 
+}
+ h1, p{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+h1 {
+    font-size: 3em;
+}
+p {
+    font-size: 1em;
+}
+.profile > img{
+    height: 80px;
     width: 100px;
 }
-.wrapper {
-    margin-top:0px;
-
+.wrapper > img{
+    margin-top: 20px;
+    width: 1110px;
+    height: 350px;
+    /* margin-top:2px;
     height: 400px;
     color: #d9581d;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -36,7 +47,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 20px; */
+}
+h2 {
+    color: #bcbcbc;
+    margin-left: 10px;
 }
 .wrapper .highlight {
     color:#d1a2e7;
@@ -45,23 +60,47 @@
     font-size: 30px;
     margin-left: 7px;
 }
-/*.wrapper .detail-btn {*/
-/*    border: 1px solid black;*/
-/*    border-radius: 15px;*/
-/*    padding: 5px;*/
-/*    background-color: rgb(245, 229, 61);*/
-/*    color: black;*/
-
-.col .image {
-    width: 100px;
-    height: 200px;
+.wrapper .detail-btn {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(245, 229, 61);
+    color: black;
 }
 .image-heading {
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
-}
-.set {
-    margin-bottom: 20px;
+    color: #bcbcbc;
 }
 
+hr {
+    height:3px;
+    border-width:0;
+    background-color: grey;
+}
+
+a > img {
+   
+    width: 350px;
+    height: 350px;
+    margin: 0 20px;
+}
+
+.last > div {
+    padding: 0;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 994px) {
+    .wrapper > img {
+         width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper > img {
+         width: 350px;
+    }
+}
