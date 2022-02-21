@@ -1,0 +1,27 @@
+<header class="Header">
+  <h1>TO Do Tasks</h1>
+</header>
+<form>
+  <div class="row">
+    <div class="col-5">
+      <input type="text" class="control"  name="todo" [(ngModel)]="todo" value="">
+    </div>
+  </div>
+  <div class="btn col-11">
+    <button type="button" class="btn btn-success" (click)="saveTodo()">Save</button>
+  </div>
+</form>
+
+<div class="todo-list mt-20">
+  <ul class="todo-list list-card">
+    <li class="list-item-card pt-10" *ngFor="let todo of todos;let i=index" [class.completed]="todo.completed">
+      <div class="view">
+
+        <label class="mr-10">{{todo.name}}</label>
+
+        <button class="btn btn-danger delete mr-10" (click)="removeTodo(i)">Delete</button>
+      </div>
+    </li>
+  </ul>
+</div>
+
