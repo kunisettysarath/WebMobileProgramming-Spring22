@@ -1,0 +1,81 @@
+.col-5{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  border-color: black;
+}
+
+.control {
+  width: 30em;
+  height: 2em;
+  border-radius: 5px;
+  display: inline;
+  border: rgb(1, 5, 26);
+  line-height: inherit;
+
+}
+
+.Header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+}
+.btn-success {
+  background-color: rgb(2, 36, 36);
+  border-color: black;
+  width: 5em;
+  height: 2em;
+  border-radius: 5px;
+  display: inline;
+
+}
+.list-item-card.pt-10 {
+  background-color: rgb(255, 255, 255);
+border-color: black;
+box-shadow:2px 2px black;
+}
+
+
+.btn.btn-danger.delete.mr-10 {
+  background-color:coral;
+  color: rgb(60, 60, 69);
+  border-color: black;
+}
+.mr-10 {
+  color: #01051a;
+  margin-right: 5px;
+}
+
+.pt-10 {
+  padding-top:10px;
+}
+
+.mt-20 {
+  margin-top:10px;
+}
+
+.btn.col-2 {
+  padding:0%;
+
+}
+.Main{
+
+   align-items: center;
+  height:100%;
+}
+
+.delete {
+  float: right;
+}
+
+.list-card {
+  padding: 0px;
+}
+
+/*diplay the list*/
+.list-item-card {
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  margin: 10px auto;
+  box-shadow: 2px 2px #ccc;
+  border-radius: 10px;
+}
