@@ -4,25 +4,30 @@
     <br />
     <form>
       <div class="form-group">
-        <div class="form-group col-lg-6 col-lg-offset-3 input-group">
-          <input
-            #recipe
-            class="form-control"
-            placeholder="Recipe name"
-            type="text"
-          />
-          <span class="input-group-addon">-</span>
-          <input #place class="form-control" placeholder="Place" type="text" />
-          <span class="input-group-addon">-</span>
+        <div class="row">
+          <div class="col form-elem">
+            <input
+              #recipe
+              class="form-control"
+              placeholder="Food Item"
+              type="text"
+            />
+          </div>
+          <div class="col form-elem">
+            <input
+              #place
+              class="form-control"
+              placeholder="Location"
+              type="text"
+            />
+          </div>
+          <div class="col">
+            <button (click)="getVenues()" class="btn btn-primary" type="button">
+              Search
+            </button>
+          </div>
         </div>
         <br />
-        <button
-          (click)="getVenues()"
-          class="btn btn primary col-lg-2 col-lg-offset-5"
-          type="button"
-        >
-          Go
-        </button>
       </div>
     </form>
   </div>
@@ -31,7 +36,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-      <div class="panel panel-default col-6">
+      <div class="panel panel-default col-6 thumbnail-description thumbnail">
         <div class="panel-heading"><b>How to make</b></div>
         <div class="panel-body">
           <div
@@ -67,12 +72,11 @@
 
             <span class="pull-right">
               <a
-                href="http://maps.google.com/maps?saddr={{ currentLat }},{{
-                  currentLong
-                }}
-             &daddr={{ venue.location.venueAddress[0] }},{{
-                  venue.location.venueAddress[1]
-                }},{{ venue.location.venueAddress[2] }}"
+                href="http://maps.google.com/maps?daddr={{
+                  venue.location.venueAddress[0]
+                }},{{ venue.location.venueAddress[1] }},{{
+                  venue.location.venueAddress[2]
+                }}"
               >
                 <img
                   src="../../assets/google.png"

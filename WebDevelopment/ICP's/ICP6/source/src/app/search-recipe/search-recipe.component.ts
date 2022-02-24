@@ -20,14 +20,6 @@ export class SearchRecipeComponent implements OnInit {
 
   constructor(private _http: HttpClient) {}
 
-  ngOnInit() {
-    window.navigator.geolocation.getCurrentPosition((position) => {
-      this.geolocationPosition = position;
-      this.currentLat = position.coords.latitude;
-      this.currentLong = position.coords.longitude;
-    });
-  }
-
   getVenues() {
     this.recipeValue = this.recipes.nativeElement.value;
     this.placeValue = this.places.nativeElement.value;
@@ -39,6 +31,7 @@ export class SearchRecipeComponent implements OnInit {
         "&app_id=57543aa4&app_key=1a9975f110ffe837754777ebeb4731d4";
       this._http.get(recipeUrl).subscribe((data) => {
         let recipes = data["hits"];
+        console.log(recipes);
         recipes.map((set) => {
           let recipe = set["recipe"];
           const individualRecepie = {
@@ -73,7 +66,6 @@ export class SearchRecipeComponent implements OnInit {
         console.log(data["results"][5].location.dma);
         venues.map((set, index) => {
           const individualVenue = {
-            // name: venues[index].location.dma,
             name: set.name,
             location: {
               venueAddress: [
@@ -83,11 +75,6 @@ export class SearchRecipeComponent implements OnInit {
               ],
             },
           };
-          console.log(individualVenue.name + " - individualVenue.name");
-          console.log("index - " + index);
-          console.log(venues[index].location.dma + " - venues[index]");
-
-          console.log(individualVenue + " - individualVenue");
           this.venueList.push(individualVenue);
         });
       });
