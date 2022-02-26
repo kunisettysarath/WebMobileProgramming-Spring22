@@ -7,7 +7,7 @@ import { Headers } from "@angular/http";
   templateUrl: "./search-recipe.component.html",
   styleUrls: ["./search-recipe.component.css"],
 })
-export class SearchRecipeComponent implements OnInit {
+export class SearchRecipeComponent {
   @ViewChild("recipe") recipes: ElementRef;
   @ViewChild("place") places: ElementRef;
   recipeValue: any;
@@ -17,13 +17,14 @@ export class SearchRecipeComponent implements OnInit {
   currentLat: any;
   currentLong: any;
   geolocationPosition: any;
+  condition = false;
 
   constructor(private _http: HttpClient) {}
 
   getVenues() {
     this.recipeValue = this.recipes.nativeElement.value;
     this.placeValue = this.places.nativeElement.value;
-
+    this.condition = true;
     if (this.recipeValue !== null) {
       var recipeUrl =
         "https://api.edamam.com/api/recipes/v2?type=public&q=" +
