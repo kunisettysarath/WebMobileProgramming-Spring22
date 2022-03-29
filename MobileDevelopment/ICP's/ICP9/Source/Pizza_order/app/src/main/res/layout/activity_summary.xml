@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Summary">
+        <TextView
+            android:id="@+id/namepizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:text="confirm!"
+            android:textAllCaps="true"
+            android:textColor="#FFFF00"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="serif"
+            android:text="YOUR ORDER!!!"
+            android:textColor="#F6FB5E"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/summaryText"
+            android:layout_width="413dp"
+            android:layout_height="396dp"
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="serif"
+            android:textColor="#FFFF00"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+
+            <!--<Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#2196F3"
+                android:onClick="orderPizzaMain"
+                android:text="order" />-->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#2196F3"
+            android:onClick="Order"
+            android:text="Back to Menu" />
+    </LinearLayout>
+</ScrollView>
