@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // getting the elements using id's
         textEdit = findViewById(R.id.editTextTTS);
         btn = findViewById(R.id.buttonTTS);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onInit(int status) {
                         if (status == TextToSpeech.SUCCESS) {
+                            // setting the language to US locale
                             int result = tts.setLanguage(Locale.US);
                             if (result == TextToSpeech.LANG_NOT_SUPPORTED ||
                                     result == TextToSpeech.LANG_MISSING_DATA)
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     void speak() {
         String s = String.valueOf(textEdit.getText());
+        // Validating the user's input
         if(s.length()==0) {
             tts.speak("please enter something", TextToSpeech.QUEUE_ADD, null);
         }
